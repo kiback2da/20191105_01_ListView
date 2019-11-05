@@ -36,17 +36,19 @@ class MainActivity : AppCompatActivity() {
     fun addRooms(){
         //방을 추가 하는 로직
         roomList.add(RoomData(8000,"마포구 서교동",1))
-
         roomList.add(RoomData(28500,"마포구 서교동",3))
-
         roomList.add(RoomData(12000,"마포구 성산동",5))
-
         roomList.add( RoomData(12000,"마포구 망원1동",3))
-
         roomList.add(RoomData(15000,"마포구 망원동",2))
-
         roomList.add(RoomData())
-
         roomList.add(RoomData("광명시 광명5동"))
+        roomList.add(RoomData(8000,"마포구 서교동",1))
+        roomList.add(RoomData(28500,"마포구 서교동",3))
+        roomList.add(RoomData(12000,"마포구 성산동",5))
+        roomList.add( RoomData(12000,"마포구 망원1동",3))
+        roomList.add(RoomData(15000,"마포구 망원동",2))
+        roomList.add(RoomData())
+        roomList.add(RoomData("광명시 광명5동"))
+
     }
 }
