@@ -14,8 +14,9 @@ class MainActivity : AppCompatActivity() {
 
         addRooms()
 
-        sum(10,20)
-        sum2(10,20)
+        /*sum(10,20)
+        sum2(10,20)*/
+
 
     }
 
@@ -29,25 +30,18 @@ class MainActivity : AppCompatActivity() {
 
     fun addRooms(){
         //방을 추가 하는 로직
-        var room1 = RoomData()
-        room1.price = 8000
-        room1.address = "마포구 서교동"
-        room1.floor = 1
+        roomList.add(RoomData(8000,"마포구 서교동",1))
 
-        roomList.add(room1)
+        roomList.add(RoomData(28500,"마포구 서교동",3))
 
-        var room2 = RoomData()
-        room2.price = 28500
-        room2.address = "마포구 서교동"
-        room2.floor = 3
+        roomList.add(RoomData(12000,"마포구 성산동",5))
 
-        roomList.add(room2)
+        roomList.add( RoomData(12000,"마포구 망원1동",3))
 
-        var room3 = RoomData()
-        room3.price = 12000
-        room3.address = "마포구 성산동"
-        room3.floor = 5
+        roomList.add(RoomData(15000,"마포구 망원동",2))
 
-        roomList.add(room3)
+        roomList.add(RoomData())
+
+        roomList.add(RoomData("광명시 광명5동"))
     }
 }
