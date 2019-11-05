@@ -2,6 +2,7 @@ package com.tjoeun.a20191105_01_listview
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ArrayAdapter
 import com.tjoeun.a20191105_01_listview.datas.RoomData
 
 class MainActivity : AppCompatActivity() {
@@ -16,6 +17,7 @@ class MainActivity : AppCompatActivity() {
 
         /*sum(10,20)
         sum2(10,20)*/
+
 
 
     }
