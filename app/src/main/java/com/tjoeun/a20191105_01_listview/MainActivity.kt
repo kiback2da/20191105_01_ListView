@@ -2,12 +2,14 @@ package com.tjoeun.a20191105_01_listview
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.ArrayAdapter
+import com.tjoeun.a20191105_01_listview.Adapters.RoomDataAdapter
 import com.tjoeun.a20191105_01_listview.datas.RoomData
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
     val roomList = ArrayList<RoomData>()
+    var roomAdapter:RoomDataAdapter? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,8 +20,9 @@ class MainActivity : AppCompatActivity() {
         /*sum(10,20)
         sum2(10,20)*/
 
+        roomAdapter = RoomDataAdapter(this,R.layout.room_list_item,roomList)
 
-
+        roomListView.adapter = roomAdapter
     }
 
     //Ex 두숫자의 합계를 Return 해주는 함수 생성
