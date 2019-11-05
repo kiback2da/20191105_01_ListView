@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
+import android.widget.TextView
 import com.tjoeun.a20191105_01_listview.R
 import com.tjoeun.a20191105_01_listview.datas.PostData
 import java.util.zip.Inflater
@@ -22,7 +23,12 @@ class PosetAdapter(context: Context,res:Int,list:ArrayList<PostData>) : ArrayAda
             row = inf.inflate(R.layout.port_list_item, null)
         }
 
+        var postData = mList.get(position)
+        var titleTxt = row?.findViewById<TextView>(R.id.titleTxt)
+        var contentTxt = row?.findViewById<TextView>(R.id.contentTxt)
 
+        titleTxt?.text = postData.title.toString()
+        contentTxt?.text = postData.content.toString()
 
         return row!!
     }
